@@ -1,0 +1,21 @@
+{
+    "date": "2025-07-09",
+    "attendances": [
+        {
+            "username": "chauffeur",
+            "time": "15:32:28"
+        },
+        {
+            "username": "chauffeur",
+            "time": "15:33:21"
+        },
+        {
+            "username": "tsialonina",
+            "time": "16:52:11"
+        },
+        {
+            "username": "tsialonina",
+            "time": "16:55:04"
+        }
+    ]
+}
