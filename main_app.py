@@ -97,6 +97,9 @@ class AppManager:
         # Efface tout contenu précédent dans la fenêtre principale
         for widget in self.root.winfo_children():
             widget.destroy()
+         #Créer un cadre pour le tableau de bord principal
+        self.dashboard_frame = tk.Frame(self.root, bg="#34495E") # Ou la couleur de fond de votre choix
+        self.dashboard_frame.pack(fill="both", expand=True)
 
         if self.logged_in_user_role == "admin":
             self.current_dashboard = AdminDashboard(
@@ -108,6 +111,7 @@ class AppManager:
             # Passer les informations de l'utilisateur au ResponsableDashboard
             self.current_dashboard = ResponsableDashboard(
                 self.root, 
+                self.dashboard_frame,
                 self, 
                 self.logged_in_user_id, 
                 self.logged_in_username, 
